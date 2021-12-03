@@ -12,7 +12,9 @@
                 border: 1px solid red !important;
             } */
 
-            
+            body{
+                background-color: #f2f2f2;
+            }
             .box1{
                 display: inline-block;
                 width: 300px;
@@ -167,6 +169,58 @@
                 color: #000;
                 
             }
+            .box122{
+                margin-top: 25px;
+                margin-bottom: 25px;
+                height: 130px;
+                width: 960px;
+                background-color: white;
+                position: relative;
+                z-index: 400;
+            }
+            .c1{
+                content: '';
+                display: block;
+                position: absolute;
+                width: 60px;
+                height: 60px;
+                border-radius: 60px !important;
+                margin: 32px 15px !important;
+                top: 0;
+                left: 0;
+                transition: opacity 0.5s ease 250ms;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+            }
+            .cycle12{
+                color: #000;
+                font-size:1.2em;
+                padding: 40px 82px;
+
+
+            }
+            .InStore{
+                display: block;
+                position: absolute !important;
+                background-color: transparent;
+                color: #000;
+                font-size:.7em;
+                padding: 0px 10px  !important;
+                border: 1px solid #8a8a88;
+            }
+            .location1{
+                height: 130px;
+                width: 130px;
+                position: absolute;
+                right: 0;
+                top: 0;
+               background-color: #fff;
+               text-align: center;
+               line-height: 130px;
+
+            }
         </style>
     </head>
     <body>
@@ -222,7 +276,25 @@
 
             </form>
            
-            <div class="box122"></div>
+            <div class=" container box122">
+                <div class="c1" style="background-image: url(img/13.png);">
+                </div>
+                <div class="cycle12">12 Cycle
+                    <div class="location1">Location</div>
+                    <button class="InStore">In-Store</button>
+                    
+                </div> 
+            </div>
+            <div class=" container box122">
+                <div class="c1" style="background-image: url(img/13.png);">
+                </div>
+                <div class="cycle12">12 Cycle
+                    <div class="location1">Location</div>
+                    <button class="InStore">In-Store</button>
+                    
+                </div> 
+            </div>
+            
            
             
             
