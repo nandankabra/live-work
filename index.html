@@ -130,13 +130,86 @@
                 color: #000;
                 
             }
+            .slider{
+                width: 20000px;
+                height: 200px;
+                margin: auto;
+                padding-left: 0px;
+                list-style: none;
+                animation: slider 5s ease-in-out  infinite ;
+            }
+            ul{
+                text-decoration: none;
+            }
+            .sliderBox{
+                width: 944px;
+                height: 360px;
+                overflow: hidden;
+                background-size: contain;
+                margin: auto;
+            }
+            .sliderBox:hover .slider{
+                animation-play-state: paused;
+            }
+            @keyframes slider {
+                0%{
+                    transform: translateX(0px);
+                }
+                24%{
+                    transform: translateX(0px);
+                }
+                25%{
+                    transform: translateX(-1250px);
+                }
+                49%{
+                    transform: translateX(-1250px);
+                }
+                50%{
+                    transform: translateX(-2500px);
+                }
+                74%{
+                    transform: translateX(-2500px);
+                }
+                75%{
+                    transform: translateX(-3750px);
+                }
+                99%{
+                    transform: translateX(-3750px);
+                }
+                100%{
+                    transform: translateX(-5000px);
+                }
+               
+            }
+            .slider > li{
+                float: left;
+                width: 1000px;
+                height: 100%;
+            }
+            .slider > li > a{
+               color:white;
+               display: block;
+               text-align: center;
+               line-height: 200px;
+               font-size: 4em;
+               height: 100%;
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
         
         <div class="container n-tbdr main "> 
             <h1 class="hh1 pt-5">Stores</h1>
-            <div class="img12 d-none d-md-block "></div>
+            <div class="sliderBox">
+                <ul>
+                    <li>
+                        <div class="img12 d-none d-md-block  slider"></div>
+                    </li>
+                </ul>
+                
+            </div>
+            
             <div class="mt-5 Recommended">
                 <a href="index.html">Recommended</a>
             </div>
